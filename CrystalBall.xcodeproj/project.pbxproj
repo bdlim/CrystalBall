@@ -112,8 +112,6 @@
 		89249F6219AAD9860091FEA1 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				89249F6B19AAD9860091FEA1 /* BLAppDelegate.h */,
-				89249F6C19AAD9860091FEA1 /* BLAppDelegate.m */,
 				89249F6E19AAD9860091FEA1 /* Main.storyboard */,
 				89249F7119AAD9860091FEA1 /* BLViewController.h */,
 				89249F7219AAD9860091FEA1 /* BLViewController.m */,
@@ -126,6 +124,8 @@
 		89249F6319AAD9860091FEA1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89249F6B19AAD9860091FEA1 /* BLAppDelegate.h */,
+				89249F6C19AAD9860091FEA1 /* BLAppDelegate.m */,
 				89249F6419AAD9860091FEA1 /* CrystalBall-Info.plist */,
 				89249F6519AAD9860091FEA1 /* InfoPlist.strings */,
 				89249F6819AAD9860091FEA1 /* main.m */,
