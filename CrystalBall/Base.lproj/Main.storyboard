@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-2h-n0A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-2h-n0A">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -31,36 +31,19 @@
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4N-Bc-ake">
-                                <rect key="frame" x="29" y="501" width="261" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="XQp-AM-BlY"/>
-                                    <constraint firstAttribute="width" constant="261" id="vnW-5b-Lkj"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="button-off">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="button-on"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CLT-ud-l4B"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3N9-2h-n0A" firstAttribute="centerY" secondItem="zjL-6G-rrb" secondAttribute="centerY" constant="35" id="2DF-cU-T0d"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J4N-Bc-ake" secondAttribute="bottom" constant="20" id="4zq-xf-hFI"/>
                             <constraint firstItem="3N9-2h-n0A" firstAttribute="centerX" secondItem="zjL-6G-rrb" secondAttribute="centerX" id="5pj-N6-9Df"/>
                             <constraint firstItem="3N9-2h-n0A" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="6AS-sx-Hfc"/>
-                            <constraint firstAttribute="centerX" secondItem="J4N-Bc-ake" secondAttribute="centerX" id="ZzB-Z5-UZ3"/>
                             <constraint firstAttribute="trailing" secondItem="3N9-2h-n0A" secondAttribute="trailing" id="g4g-5x-dij"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3N9-2h-n0A" secondAttribute="bottom" id="myO-bb-pIU"/>
                             <constraint firstItem="3N9-2h-n0A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="whg-Me-rz8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="3N9-2h-n0A" id="IG7-qd-mDA"/>
                         <outlet property="predictionLabel" destination="zjL-6G-rrb" id="V6h-zm-Olx"/>
                     </connections>
                 </viewController>
@@ -69,9 +52,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="320" height="568"/>
-        <image name="button-off" width="261" height="49"/>
-        <image name="button-on" width="261" height="47"/>
+        <image name="CB00001" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

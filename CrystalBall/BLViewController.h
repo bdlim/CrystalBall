@@ -13,7 +13,7 @@
 @interface BLViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) BLCrystalBall *crystalBall;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
-- (IBAction)buttonPressed;
-
+- (void) makePrediction;
 @end
