@@ -7,6 +7,7 @@
 //
 
 #import "BLViewController.h"
+#import "BLCrystalBall.h"
 
 @interface BLViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.crystalBall = [[BLCrystalBall alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,8 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 
 

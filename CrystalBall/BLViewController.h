@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class BLCrystalBall;
+
 @interface BLViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) BLCrystalBall *crystalBall;
+
 - (IBAction)buttonPressed;
 
 @end
